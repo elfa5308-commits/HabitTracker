@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#6200EE"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:translationY="-5dp"
+            android:includeFontPadding="false"
+            android:text="←"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:fontFamily="sans"
+            android:contentDescription="Kembali" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Create New Habit"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/bg_login_card"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add a New Habit"
+                    android:textColor="#292929"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="22dp" />
+
+                <EditText
+                    android:id="@+id/edtHabitName"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="Habit Name *"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:singleLine="true"
+                    android:inputType="textCapSentences"
+                    android:textColor="#292929"
+                    android:textColorHint="#757575" />
+
+                <EditText
+                    android:id="@+id/edtHabitDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="104dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="top"
+                    android:hint="Short Description *"
+                    android:padding="14dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="#292929"
+                    android:textColorHint="#757575" />
+
+                <EditText
+                    android:id="@+id/edtHabitGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="Goal *"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="#292929"
+                    android:textColorHint="#757575" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:text="How many to complete this task?"
+                    android:textColor="#757575"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtHabitUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="Unit *"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:singleLine="true"
+                    android:inputType="textCapSentences"
+                    android:textColor="#292929"
+                    android:textColorHint="#757575" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:text="e.g., glasses, minutes, pages, meals"
+                    android:textColor="#757575"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Select Icon *"
+                    android:textColor="#555555"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerHabitIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edittext"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSaveHabit"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_create_button"
+                android:backgroundTint="@null"
+                android:elevation="3dp"
+                android:stateListAnimator="@null"
+                android:text="Create Habit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

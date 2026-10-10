@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingStart="12dp"
+        android:paddingTop="35dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="100dp"
+        android:scrollbars="vertical" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddHabit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Tambah habit"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#6200EE"
+        app:tint="@android:color/white"
+        app:elevation="6dp"
+        app:fabSize="normal" />
+
+</FrameLayout>

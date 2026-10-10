@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_login_card"
+        android:elevation="6dp"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habit Tracker"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in to continue"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:gravity="center"
+            android:layout_marginBottom="28dp" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username*"
+            android:inputType="text"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password*"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginBottom="28dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="309dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#6200EE"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:cornerRadius="4dp" />
+
+        <TextView
+            android:id="@+id/txtError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D32F2F"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
